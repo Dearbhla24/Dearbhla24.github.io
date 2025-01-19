@@ -1,5 +1,6 @@
 body {
   background-color: #F4C2C2;
+  font-family: 'Comic Sans MS',sans-serif;
 }
 h1{
 color: darkred;
@@ -9,4 +10,10 @@ color: darkred;
 }
 h3{
 color: darkred;
+}
+a{
+  border: solid;
+  border-color: darkred;
+  border-radius: 50px;
+  border-width: 10px;
 }
