@@ -13,7 +13,8 @@ const URLS_TO_CACHE = [
   '/numbers.html',
   '/img_8254.jpeg',
   '/img_8255.jpeg',
-  '/First aid.jpeg'
+  '/First aid.jpeg',
+  '/manifest.json'
 ];
 
 // Install event: Cache files
