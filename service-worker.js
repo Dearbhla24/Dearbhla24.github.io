@@ -12,8 +12,8 @@ const urlsToCache = [
   '/IMG_8255.jpeg',
   '/manifest.json',
   '/First aid.jpeg',
-  '/icons/icon-192x192.jpg',
-  '/icons/icon-512x512.jpg',
+  '/icons/icon-192x192.png',
+  '/icons/icon-512x512.png',
   '/download.html'
 ];
 
@@ -53,4 +53,8 @@ self.addEventListener('activate', event => {
       );
     })
   );
+});
+
+self.addEventListener('controllerchange', () => {
+  window.location.reload();
 });
