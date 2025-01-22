@@ -13,7 +13,8 @@ const urlsToCache = [
   '/manifest.json',
   '/First aid.jpeg',
   '/icons/placeholder-icon-192x192.png',
-  '/icons/placeholder-icon-512x512.png'
+  '/icons/placeholder-icon-512x512.png',
+  '/download.html'
 ];
 
 // Install the service worker and cache the app's assets
