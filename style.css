@@ -5,7 +5,7 @@ body {
 h1{
 color: darkred;
 }
-p, ul{
+p, ul, ol{
 color: darkred;
 }
 h3{
