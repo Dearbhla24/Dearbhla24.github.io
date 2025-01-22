@@ -12,8 +12,8 @@ const urlsToCache = [
   '/IMG_8255.jpeg',
   '/manifest.json',
   '/First aid.jpeg',
-  '/icons/placeholder-icon-192x192.png',
-  '/icons/placeholder-icon-512x512.png',
+  '/icons/icon-192x192.jpg',
+  '/icons/icon-512x512.jpg',
   '/download.html'
 ];
 
