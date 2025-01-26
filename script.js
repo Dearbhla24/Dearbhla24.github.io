@@ -38,8 +38,9 @@ let answers = {
 "Hypothermia":"If someone has hypothermia, slowly wearm them up. Remove any wet cloths. Apply anythin warm such as blankets or towels. Call emergency service if condition does not improve .",
 "sling":" For a sling you will need a triangular bandage or piece of cloth. Place one end of the cloth under the arm and over the shoulder of the patient. Take the other end and place it ovee the shoulder, ensuring the apex is ma the patients elbow. Tie the ends of the bandage at back of the casualties neck.",
 "splint":"To create a splint. Find something rigid and supportive for the splint. Make sure it is larger than the injured area. Secure the splint with anything you have to tie. ENSURING it is not too tight. seek medical help urgently.",
-
-
+"sprain":"If someone has sprained a muscle.Protect the area using a support. Rest the area. Ice the area. Apply Compression to the area. Elevate the area. If the sprain is bad, go to the A+E",
+"strain":"If someone has strained a muscle.Protect the area using a support. Rest the area. Ice the area. Apply Compression to the area. Elevate the area. If the sprain is bad, go to the A+E",
+"unresponsive":"If a casualty is unresponsive and not breathing. Begin CPR. If a casualty is unresponsive and breathing. Place the casualty in the recover position."
 
 };
 function askQuestion() {
