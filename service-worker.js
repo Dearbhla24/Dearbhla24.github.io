@@ -17,19 +17,7 @@ const urlsToCache = [
   '/download.html'
 ];
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js').then((registration) => {
-    registration.onupdatefound = () => {
-      const newWorker = registration.installing;
-      newWorker.onstatechange = () => {
-        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-          //Notify user about the update
-          alert("A new version is available. Please refresh to update.");
-        }
-      };
-    };
-  });
-}
+
 
 // Install the service worker and cache the app's assets
 self.addEventListener('install', event => {

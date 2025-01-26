@@ -69,7 +69,7 @@ function askQuestion() {
   }
 
   if (!foundAnswer) {
-    document.getElementById("answer").innerHTML = "I don't know the answer to that.Please either get emergency help or try a different keyword"; 
+    document.getElementById("answer").innerHTML = "I don't know the answer to that. Please either get emergency help or try a different keyword"; 
      }
   { var num = document.getElementById("answer");
   num.style.fontSize = "20px";
@@ -81,12 +81,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Your other DOM-related logic here...
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(error => {
-        console.error('Service Worker registration failed:', error);
-      });
+    navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+      registration.onupdatefound = () => {
+        const newWorker = registration.installing;
+        newWorker.onstatechange = () => {
+          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+            //Notify user about the update
+            alert("A new version is available. Please refresh to update.");
+          }
+        };
+      };
+    });
   }
 });
+
+
